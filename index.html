@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta Feriado</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="alinhamento">
+      <header>
+        <h1>Consulta de Feriados</h1>
+        <p>
+          🌍✈️🎉 "Já está sonhando com o seu próximo dia de folga? Ou talvez
+          curioso sobre como as pessoas em outras <br />
+          partes do mundo estarão celebrando seus feriados enquanto você planeja
+          sua próxima aventura ou dia de descanso?<br />
+          Não importa se você está planejando uma escapada rápida,uma longa
+          viagem de descobertas, ou apenas quer saber<br />
+          quando será o próximo feriado para maratonar sua série favorita.
+          Digite o código do país abaixo e descubra quais são os<br />
+          próximos feriados ao redor do globo. Vamos lá, qual é o seu próximo
+          destino ou feriado você está ansioso para<br />
+          celebrar?"
+        </p>
+      </header>
+      <main>
+        <section>
+          <form action="consultar">
+            <label for="inputCountryCode">Informe o Código do País</label>
+            <input
+              type="text"
+              id="inputCountry"
+              placeholder="Digite o código do país"
+            />
+            <div class="botoes">
+              <button type="submit" id="btnBuscar">Buscar Feriados</button>
+              <button type="button" id="btnLimpar">Limpar</button>
+            </div>
+          </form>
+          <article id="feriados"></article>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
